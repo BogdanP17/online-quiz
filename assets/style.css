@@ -5,6 +5,23 @@
 
 body{
     background-color: rgba(129, 110, 121, 0.08);
+   
+}
+/* The Footer */
+.social-medias {
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+/* Icons of the footer */
+.social-medias i {
+    font-size: 120%;
+    padding: 5%;
+    color: black;
+    background-color: #ffffff;
 }
 
 .heading{
@@ -19,17 +36,21 @@ body{
     font-size: 2.5rem;
 }
 
+/* Main div */
 .container{
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0, auto;
     font-size: 1.5;
-    padding-top: 80px;
+    padding-top: 80px ;
+    padding-bottom: 20px;
 }
+
+/* Answers style when hover */
 .choice:hover{
     cursor: pointer;
-    box-shadow: 0 0.6em 1rem rgba(202, 31, 57, 0.08);
+    box-shadow: 0 0.5em 1.5rem rgba(3, 7, 243, 0.705);
     
 }
 
@@ -40,6 +61,8 @@ body{
     border-radius: 10px;
    
 }
+
+/* Letters before answers*/
 .prefix{
     padding: 0.5rem 1rem;
     background-color: yellow;
