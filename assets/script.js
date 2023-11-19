@@ -57,10 +57,24 @@ function newQuestions(){
         const number = choice.dataset['number'];
         choice.innerText = currectQuestion['option' + number];
     });
+    availableQuestions.splice(questionIndex, 1);
 };
 
-function checkUserAnswer() {
+choices.forEach(choice => {
+    choice.addEventListener('click', o =>  {
+        const selectedChoice = o.target;
+        const selectedAnswer = selectedChoice.dataset["number"];
+        newQuestions();
+    });
+
+});
+
+function checkAnswer() {
+    if(questions === answer) {
+        newQuestions();
+    }else {
+        return;
+    }
 
 }
-
 game();

@@ -1,3 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Lugrasimo&display=swap');
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -5,31 +10,40 @@
 
 body{
     background-color: rgba(129, 110, 121, 0.08);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
    
 }
 /* The Footer */
 .social-medias {
+    background-color: green;
     text-align: center;
     padding: 10px 0;
     display: flex;
     list-style-type: none;
     justify-content: space-evenly;
+    
 }
 
-/* Icons of the footer */
-.social-medias i {
-    font-size: 120%;
-    padding: 5%;
+.social-medias i{
     color: black;
-    background-color: #ffffff;
 }
+ i:hover {
+    cursor: pointer;
+    box-shadow: 0 1em 1.5rem rgba(3, 7, 243, 0.705);
+ }
+
+
 
 .heading{
+    font-family: Agbalumo;
     align-items: center;
     justify-content: center;
     display: flex;
     padding-top: 25px;
-    padding: 2rem;
+   
 }
 
 .question{
@@ -38,19 +52,21 @@ body{
 
 /* Main div */
 .container{
+    flex: 1 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0, auto;
     font-size: 1.5;
-    padding-top: 80px ;
+    padding-top: 30px ;
     padding-bottom: 20px;
 }
 
 /* Answers style when hover */
-.choice:hover{
+
+.choice:hover {
     cursor: pointer;
-    box-shadow: 0 0.5em 1.5rem rgba(3, 7, 243, 0.705);
+    box-shadow: 0 0.5em 1.6rem rgba(3, 7, 243, 0.705);
     
 }
 
@@ -71,6 +87,7 @@ body{
 
 .text{
     padding: 0.5rem;
+    width: 100%;
 }
     
 
