@@ -13,19 +13,25 @@ let questions = [
         question: "Who win 2019 world cup?",
         option1: "Argentina",
         option2 : "France",
-        answer: "Argentina"
+        option3 : "Romania",
+        option4 : "Germany",
+        answer: 1
     },
     {
         question: "Who is Connor McGreggor?",
-        option1: "MMA Fighter",
+        option1: "Baseball Player",
         option2: "F1 Driver",
-        answer: "MMA Figher"
+        option3: "Golf Player",
+        option4: "MAA Fighter",
+        answer: 4
     },
     {
         question: "Leo Meesi is a ?",
-        option1: "Football Player",
-        option2: "Actor",
-        answer: "Football Player"
+        option1: "Musician",
+        option2: "Football Player",
+        option3: "Actor",
+        option4: "Dancer",
+        answer: 2
     }
 
 ];
@@ -52,5 +58,9 @@ function newQuestions(){
         choice.innerText = currectQuestion['option' + number];
     });
 };
+
+function checkUserAnswer() {
+
+}
 
 game();
