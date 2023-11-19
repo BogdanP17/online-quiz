@@ -1,5 +1,5 @@
 const question = document.getElementById("question");
-const choices = Array.from(document.getElementsByClassName("choice-text"));
+const choices = Array.from(document.getElementsByClassName("text"));
 console.log(choices);
 
 let currectQuestion = {};
@@ -46,8 +46,11 @@ function newQuestions(){
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currectQuestion = availableQuestions[questionIndex];
     question.innerText = currectQuestion.question;
-}
+    console.log(currectQuestion);
+    choices.forEach ( choice => {
+        const number = choice.dataset['number'];
+        choice.innerText = currectQuestion['option' + number];
+    });
+};
 
 game();
-
-
